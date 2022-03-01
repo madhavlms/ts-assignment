@@ -16,7 +16,7 @@ const COUNTRIES = ["", 'India', "USA", "Canada", "China"];
 
 const isAnagram = (key1: string, key2: string) => {
     const splitted = key1.split("");
-    return splitted.every(ele => key2.includes(ele));
+    return splitted.every(ele => key2.includes(ele)) && key1.length === key2.length;
 };
 
 const validateName = (name: string) => {
